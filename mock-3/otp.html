@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP</title>
+  </head>
+  <body>
+    <input type="number" id="otp" />
+    <button id="submit">Submit</button>
+  </body>
+  <script>
+    let btn=document.getElementById("submit")
+    btn.addEventListener("click",otpSubmit)
+
+    function otpSubmit(){
+      console.log("hhhhhh")
+      let otp=document.getElementById("otp").value
+      console.log(otp)
+      if(otp==1234){
+        alert("Payment Successful")
+      }
+    }
+  </script>
+</html>

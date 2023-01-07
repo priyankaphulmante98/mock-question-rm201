@@ -1,0 +1,109 @@
+import React from "react";
+import './App.css';
+import { useState, useEffect} from "react";
+
+const init = {
+  task: ""
+};
+function Task() {
+  const [form, setForm] = useState(init);
+  const [user, setuser] = useState([])
+  const [userdata, setuserdata] = useState([])
+
+  useEffect(() => {
+    fetch("signup mai jo link dala wo dalo ").then((res)=>{
+        return res.json()
+    }).then((resp)=>{
+        // console.log(resp)
+        setuser(resp)
+    }).catch((er)=>{
+        console.log(er.message)
+    })
+}, [])
+
+    useEffect(() => {
+        fetch("new todo task ke liye  ek link dalo ").then((res)=>{
+            return res.json()
+        }).then((resp)=>{
+            // console.log(resp)
+            setuserdata(resp)
+        }).catch((er)=>{
+            console.log(er.message)
+        })
+    }, [])
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  }
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(form);
+    const { password,  confirmPassword } = form;
+    if (password !=  confirmPassword) {
+      alert("Password should match");
+    } else {
+      handleAddUser(form);
+    }
+  }
+
+  function handleAddUser(data) {
+    fetch(" upp er todo ke liye hai wahi link dalo ", {
+      method: "POST",
+      body: JSON.stringify(form),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) =>{
+        alert("Task added Successfully")
+        window.location.reload()
+    });
+  }
+
+  return (
+    <div className="signupDiv">
+        <div className="container">
+            {
+                user &&
+                user.map(e=>(
+                    <div> 
+                        <h2>{e.username}</h2>
+                    </div>
+                ))
+            }
+        </div>
+
+        <div className="container">
+            {
+                userdata &&
+                userdata.map(e=>(
+                    <div> 
+                        <h1>{e.id}</h1>
+                        <h2>{e.task}</h2>
+                    </div>
+                ))
+            }
+        </div>
+
+      <form onSubmit={(e) => handleSubmit(e)}>
+        <label>Add Task</label>
+        <br />
+        <input
+          type="text"
+          placeholder="add Task"
+          name="task"
+          onChange={(e) => handleChange(e)}
+        />
+        <br />
+        <br />
+        <input className="btn" type="submit" />
+      </form>
+      
+    </div>
+  );
+}
+
+export default Task;

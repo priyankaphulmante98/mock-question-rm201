@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="./index.html">Home</a>
+      <a href="./cart.html">Cart</a>
+      <a href="./payment.html">Payment</a>
+    </div>
+    <div>
+      <h1>Your Total cart Price is:- <span id="cart-total">0</span></h1>
+      <input type="text" id="cupon-filled" placeholder="masai30" />
+      <button id="cupon-active">Submit</button>
+    </div>
+    <div id="cart-container">
+      <!-- Here Append All the cart Products  -->
+    </div>
+  </body>
+  <script>
+    let cartArr=JSON.parse(localStorage.getItem("cart"))||[]
+
+    window.addEventListener("load",function(){
+      displayCartItem(cartArr)
+      updateCart()
+    })
+
+    function displayCartItem(cartArr){
+
+      cartArr.forEach((e,i)=>{
+
+      let div=document.createElement("div")
+      div.setAttribute("id","divCont")
+
+      let name=document.createElement("p")
+      name.textContent=e.name
+
+      let price=document.createElement("p")
+      price.textContent=e.cartPrice
+
+      let strikedoffprice=document.createElement("p")
+      strikedoffprice.textContent=e.strikedoffprice
+
+      let quan=document.createElement("div")
+      
+      let span=document.createElement("span")
+
+      let dec=document.createElement("button")
+      dec.textContent="-"
+      dec.addEventListener("click",function(){
+        decrease(e,i,cartArr)
+      })
+
+      let quantity=document.createElement("span")
+      quantity.innerText=e.quantity
+
+      let inc=document.createElement("butoon")
+      inc.innerText="+"
+      inc.addEventListener("click",function(){
+        increment(e,i,cartArr)
+      })
+
+      div.append(name,price,strikedoffprice,inc,quantity,dec)
+      document.getElementById("cart-container").append(div)
+      })
+    }
+
+
+    function decrease(el,i,arr){
+      arr[i].quantity--
+      if(arr[i].quantity==0){
+        event.target.parentNode.remove()
+        arr.splic(i,1)
+        localStorage.setItem("cart",JSON.stringify(arr))
+        window.location.reload()
+      }
+      arr[i].cartPrice=arr[i].quantity*el.price
+      localStorage.setItem("cart",JSON.stringify(arr))
+      window.location.reload()
+    }
+    function increment(el,i,arr){
+      arr[i].quantity++
+      arr[i].cartPrice=arr[i].quantity*el.price
+      localStorage.setItem("cart",JSON.stringify(arr))
+      window.location.reload()
+    }
+    function updateCart(){
+      let it=0
+      let cartValue=0
+      let arr=JSON.parse(localStorage.getItem("cart"))||[]
+      for(let i=0; i<arr.length; i++){
+        it+=arr[i].quantity
+        cartValue+=arr[i].cartPrice
+      }
+      document.getElementById("cart-total").innerText=cartValue
+    }
+
+    let cartBtn=document.getElementById("cupon-active").addEventListener("click",handleCartPayMent)
+    function handleCartPayMent(){
+      let cpn=document.getElementById("cupon-filled").value
+      let total =(+document.getElementById("cart-total").innerText)
+
+      if(cpn==="masai30"){
+        let ans=Math.floor(total*0.3)
+        document.getElementById("cart-total").textContent=ans
+      }
+    }
+  </script>
+</html>
