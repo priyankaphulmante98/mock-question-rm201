@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 MOCK-RM-22.md
 
 ********Mock 1-************
+=======
+# mock-question-rm201
+
+*********Mock 1-************
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Round 1 ==> 
 
@@ -14,8 +20,12 @@ Pixel perfect design will be looked into
 Link: https://saber-columnist-50d.notion.site/Mock-1-aca68716a29a4f468cc0260ebbe7add1
 deploy link ==> https://capable-shortbread-dee83c.netlify.app/
 
+<<<<<<< HEAD
 think through all the possible cases, figure out the logic and convert in into code. You may not need any specific data structures or
  any particular algorithm as such, but feel free to use if any of them make your task easy
+=======
+think through all the possible cases, figure out the logic and convert in into code. You may not need any specific data structures or any particular algorithm as such, but feel free to use if any of them make your task easy
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Round 2==>
 
@@ -39,7 +49,11 @@ Sorting Algorithms
 
 Round 1 ==>  
 
+<<<<<<< HEAD
 Mock Assessment-2 
+=======
+Mock Assessment-1 
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Students will have to use HTML, CSS, and JS DOM, Local Storage to implement the given functionality.
 There is no need to work with API requests here, everything can be done on their browser.
@@ -62,9 +76,13 @@ Round 3 ==>
 Link: https://oj.masaischool.com/contest/6858
 Password: 290100
 
+<<<<<<< HEAD
 is around Implementation. You will be given some problem statements, for which you will have to think through all the possible cases, 
 figure out the logic and convert in into code. You may not need any specific data structures or any particular algorithm as such,
  but feel free to use if any of them make your task easy
+=======
+is around Implementation. You will be given some problem statements, for which you will have to think through all the possible cases, figure out the logic and convert in into code. You may not need any specific data structures or any particular algorithm as such, but feel free to use if any of them make your task easy
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 will have questions from the following topics
 Arrays
 Strings
@@ -76,7 +94,11 @@ Sorting Algorithms
 
 Round 1 ==>  
 
+<<<<<<< HEAD
 Mock Assessment-3
+=======
+Mock Assessment-1
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Students will have to use HTML, CSS, and JS DOM, Local Storage to implement the given functionality.
 Knowledge of Promises, fetch and asynchronous js will be looked into.
@@ -96,9 +118,13 @@ Round 3 ==>
 Link: https://oj.masaischool.com/contest/6905
 Password: 290100
 
+<<<<<<< HEAD
 is around Implementation. You will be given some problem statements, for which you will have to think through all the possible cases,
  figure out the logic and convert in into code. You may not need any specific data structures or any particular algorithm as such, 
 but feel free to use if any of them make your task easy
+=======
+is around Implementation. You will be given some problem statements, for which you will have to think through all the possible cases, figure out the logic and convert in into code. You may not need any specific data structures or any particular algorithm as such, but feel free to use if any of them make your task easy
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 will have questions from the following topics
 Arrays
 Strings
@@ -109,7 +135,11 @@ Sorting Algorithms
 
 Round 1 ==>  
 
+<<<<<<< HEAD
 Mock Assessment-4 
+=======
+Mock Assessment-1 
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Students will have to use HTML, CSS, and JS DOM, Local Storage to implement the given functionality.
 Knowledge of Promises, fetch and asynchronous js will be looked into.
@@ -147,18 +177,29 @@ Backtracking
 
 Round 1 ==>  
 
+<<<<<<< HEAD
 Mock Assessment-5
+=======
+Mock Assessment-1
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Students are required to implement CRUD operations using JSON server.
 Knowledge of fetch, promises, DOM, JSON server will be looked into
 Understanding of css is also looked at here.
 Any kind of plagiarism will be having strict actions.
+<<<<<<< HEAD
 Round 2 is around Implementation. You will be given some problem statements, for which you will have to think through all the possible cases,
  figure out the logic and convert in into code. You may not need any specific data structures or any particular algorithm as such, 
 but feel free to use if any of them make your task easy 
 
 Link: https://saber-columnist-50d.notion.site/Masai-carWale-6b03d9ca069b484eb9c40fa22f9ae7c4
 deployed link ==> https://mock-5-chi.vercel.app/
+=======
+Round 2 is around Implementation. You will be given some problem statements, for which you will have to think through all the possible cases, figure out the logic and convert in into code. You may not need any specific data structures or any particular algorithm as such, but feel free to use if any of them make your task easy 
+
+Link: https://saber-columnist-50d.notion.site/Masai-carWale-6b03d9ca069b484eb9c40fa22f9ae7c4
+deployed link ==> https://lambent-otter-58cea7.netlify.app/
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Round 2 ==>
 
@@ -189,7 +230,11 @@ Backtracking
 
 Round 1 ==>  
 
+<<<<<<< HEAD
 Mock Assessment-6
+=======
+Mock Assessment-1
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
 
 Students are required to implement the solution using HTML,CSS, React.
 Understanding of networks calls will be looked into.
@@ -226,6 +271,7 @@ Greedy Technique
 Linked List
 To Perform well in this round, you will have to use one (or more) of the above data structures to solve the questions
 You may have to use some extra space or use a specific algorithm to optimise your solutions, given the value of the constraints for the input
+<<<<<<< HEAD
 Also, you will have to prioritise questions, in order to maximise the number of questions you can solve during the contest. 
 The more questions you solve, the higher are your chances of clearing the round
 
@@ -323,3 +369,8 @@ To Perform well in this round, you will have to use one (or more) of the above d
 You may have to use some extra space or use a specific algorithm to optimise your solutions, given the value of the constraints for the input
 Also, you will have to prioritise questions, in order to maximise the number of questions you can solve during the contest. The more questions you solve,
 the higher are your chances of clearing the round
+=======
+Also, you will have to prioritise questions, in order to maximise the number of questions you can solve during the contest. The more questions you solve, the higher are your chances of clearing the round
+
+
+>>>>>>> 083bd42e7d13e3556ad3819e9adb4d89e3c8c87d
