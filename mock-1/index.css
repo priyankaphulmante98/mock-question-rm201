@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nav {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Fa3bNIJp_GSHvRPh5uOHV-8wjesV0sQzNw&usqp=CAU");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .navbar .logo {
+    color: white;
+    font-size:20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+  .menubar {
+    display: flex;
+    flex-direction: column;
+  }
+  .menubar span {
+    width: 15px;
+  
+    margin: 2px;
+  
+    border: 1px solid white;
+  }
+  
+  /* home section part start here */
+  
+  #home {
+    position: relative;
+    top: 30%;
+    text-align: center;
+  }
+  #home h2,
+  p {
+    color: white;
+    margin: 1rem;
+  }
+  #home .explore {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(208, 34, 133)
+  }
+  #home .download {
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background: none;
+    font-size: 14px;
+    border: 1px solid white;
+
+  }
+  /* work gallery start heere part  */
+  #gallery {
+    height: auto;
+  }
+  #gallery .maingallery {
+    width: 50%;
+    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+  }
+  #header {
+    text-align: center;
+  }
+  #header p {
+    color: orange;
+  }
+  
+  .img1 img {
+    width: 100%;
+    height: auto;
+  }
+  .img2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img2 img {
+    width: 180px;
+    height: 200px;
+  }
+  .div2 img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* apartment css part start here part */
+  
+  #room h2 {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: rgba(227, 220, 220, 0.891);
+  }
+  .rooms {
+    display: flex;
+    flex-direction: column;
+  }
+  .rooms > div {
+    width: 100%;
+    height: auto;
+  }
+  .box {
+    height: 200px;
+    display: flex;
+  }
+  .box > div {
+    width: 50%;
+  }
+  .box .innerbox {
+    display: flex;
+  }
+  .innerbox img {
+    width: 100%;
+    height: 100%;
+  }
+  .innerbox > div {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .stars {
+    text-align: center;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .content {
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 1rem;
+  }
+  .content h4 {
+    margin: 4px;
+  }
+  .content button {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid lightgrey;
+    margin: 10px 0;
+  }
+  .roomfoot{
+  height: 4rem;
+  background-color: lightgrey;
+  }
+  
+  
+  
+  /* posts  css part start here*/
+  #posts{
+      height: 400px;
+      padding: 1rem;
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      text-align: center;
+   
+  }
+  
+  #posts .comments .cbox{
+      display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap:1rem
+  }
+  .posts{
+      display: grid;
+      gap: 0.5rem;
+  }
+  .cbox img{
+      width: 100px;
+  }
+  .comment1{
+      width: 100%;
+  }
+  .auto h3{
+      margin-bottom: 2rem;
+  
+  }
+  .center{
+      text-align: center;
+      margin: 2rem 0;
+  }
+  
+  
+  
+  
+  
+  /* footer part start here  */
+  footer{
+      margin: 2rem;
+      text-align: center;
+  }
+  .tags{
+    min-height: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+      width: 60%;
+      margin: auto;
+      text-align: center;
+  
+  
+  }
+  
+  .tags button{
+    font-weight: 600;
+    border: 1px solid lightgrey;
+      padding: 0.3rem 0.5rem;
+      margin: 0.5rem;
+     
+  }
+  
+  
+  
+  
+  /* media query */
+  /* tab size media query  */
+  @media only screen and (max-width: 900px){
+      #gallery .maingallery {
+          width: 50%;
+          margin: auto;
+          height: auto;
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          box-sizing: border-box;
+        }
+        .box {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+        }
+        .rooms > div {
+          width: 100%;
+          height: auto;
+          margin: 1rem 0;
+        }
+        .box > div {
+          width: 100%;
+        }
+  
+  
+        #posts{
+          grid-template-columns: repeat(2,1fr);
+      }
+  }
+  @media only screen and (max-width: 500px){
+      .homebuttons{
+          display: flex;
+          flex-wrap: wrap;
+          width: 80%;
+          text-align: center;
+      }
+      .homebuttons >button{
+          margin-left: 2rem;
+          margin-top: 1rem;
+          width: 90%;
+      }
+      .img2 {
+       
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .img2 img {
+          width: 100%;
+          height: 200px;
+        }
+        .box .innerbox {
+          display: flex;
+          flex-direction: column;
+      }
+      #room{
+          margin: 1rem 0;
+      }
+  
+      .box .innerbox>div{
+            width: 100%;
+  
+        }
+        #posts{
+          height: auto;
+          grid-template-columns: repeat(1,1fr);
+      }
+     .comment1 h6{
+      font-size: 8px;
+     }
+     .comment1 h4{
+      font-size: 11px;
+      margin-bottom: 8px;
+     }
+      .tags{
+          width: 100%;
+      }
+  
+  }

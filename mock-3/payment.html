@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" id="name" />
+      <input type="number" id="cardNo" />
+      <input type="number" id="cardCvv" />
+      <input type="submit" value="Confirm"/>
+    </form>
+  </body>
+  <script>
+    let formm=document.querySelector("form")
+    formm.addEventListener("submit",submit)
+    function submit(){
+      event.preventDefault()
+      let form=document.querySelector("form")
+      let name=form.name.value
+      let cardNo=form.cardNo.value
+      let cardCvv=form.cardCvv.value
+
+      if(name===""){
+        alert("Any of the Given fields are empty")
+      }
+      else if(cardNo===""){
+        alert("Any of the Given fields are empty")
+      }
+      else if(cardCvv===""){
+        alert("Any of the Given fields are empty")
+      }
+
+      else{
+        window.location.href="otp.html"
+      }
+    }
+  </script>
+</html>

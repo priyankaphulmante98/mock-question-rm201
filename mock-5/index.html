@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-around;
+            height: 80px;
+            width: 100%;
+            background-color:  rgb(134, 18, 134);
+            
+            /* align-items: center; */
+        }.navbar a{
+            color: rgb(255, 255, 255);
+            list-style: none;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+  #form{
+    width: 500px;
+    height: auto;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+    margin-top: 100px;
+    padding: 30px ;
+    box-shadow: rgba(214, 55, 214, 0.2) 0px 8px 24px;
+    background-color: whitesmoke; 
+  }
+  label{
+   color: rgb(116, 106, 106);
+   width:auto;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 90%;
+    /* text-align: center; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    /* box-sizing: border-box; */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  button{
+    background-color: rgb(134, 18, 134);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 15px;
+    margin-left: 30%;
+    
+  
+  }
+  
+  #button:hover {
+    background-color: rgb(53, 53, 53);
+   
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+      <h3><a href="./index.html">Ad-page</a></h3> 
+       <h3><a href="./cars-page.html">Cars-page</a></h3>
+       <h3><a href="./wishlist-page.html">Wishlist-page</a></h3>
+    </nav>
+
+
+ <section>
+ <form id="form" >
+    
+     <select id="brand">
+        <option value="">brand</option>
+        <option value="tata">Tata</option>
+        <option value="maruti swift">maruti swift</option>
+        <option value="tata">jaguar</option>
+        <option value="maruti swift">volvo</option>
+        <option value="tata">honda</option>
+     
+     </select>
+     
+    
+     <select id="type">
+        <option value="">Type</option>
+        <option value="manual">Manual</option>
+        <option value="automated">Automated</option>
+     </select>
+
+
+     <select id="year">
+        <option value="">Year</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+        <option value="2017">2017</option>
+     </select>
+     
+     <input type="number" placeholder="KM driven" id="kms"  /><br>
+   
+     <input type="text" placeholder="Description" id="Description"   /><br>
+
+     <input id="Price" placeholder="Price" type="number"><br/><br/>
+
+     <button type="submit" id="button" value="submit">Submit</button>
+     
+ </form>
+ </section>
+</body>
+<script>
+
+
+
+     let form = document.getElementById("form");
+    form.addEventListener("submit", submitfunction);
+
+    function submitfunction(e){
+        e.preventDefault()
+
+        let obj = {
+            brand:form.brand.value,
+            type:form.type.value,
+            year:form.year.value,
+            kms:form.kms.value,
+            Description:form.Description.value,
+            Price:form.Price.value,
+           
+        }
+        console.log(obj)
+        alert("car data addded sucessfully")
+         postData(obj) 
+        //  window.location.href="cars-page.html"
+        
+    }
+    
+
+     function postData(cdata){
+      console.log(cdata,"cdata")
+
+   fetch("https://json-mock-ne19.onrender.com/products",{
+        method:"POST",
+        body:JSON.stringify(cdata),
+        headers:{
+            "Content-Type":"application/json",
+        },
+    });
+
+   
+    }
+
+</script>
+</html>

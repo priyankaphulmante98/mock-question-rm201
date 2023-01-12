@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(206, 59, 142);
+    padding:70px;
+    border-radius:10px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    height: 100vh;
+    color:white;
+}
+  
+  .otp_box{
+    display: flex;
+}
+.otp_box input{
+    width: 50px;
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    border: 2px solid grey ;
+    font-weight: bold;
+    outline: none;
+    transition: all 0.1s;
+}
+.otp_box input:focus{
+    border: 2px solid rgb(161, 130, 153);
+}
+.customBtn{
+    width: 100%;
+    background:rgb(39, 140, 203);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    transition: .2s linear;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <navbar id="navbar">
+        <div><a href="./index.html">Products</a></div>
+        <div><a href="./wishlist.html">Wishlist</a></div>
+      </navbar>
+    <div id="container"></div>
+    
+</body>
+</html>
+<script>
+let data = JSON.parse(localStorage.getItem("wishlist"))||[]
+displayData(data)
+
+
+    function displayData(data){
+    container.innerHTML = null;
+
+    data.forEach((e) => {
+        
+    let div = document.createElement("div");
+
+    let image = document.createElement("img");
+    image.setAttribute("src","https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQtTrGm0D8e0nLTfzeeF6FVASBRqCtWuEKJxKVvLjDPhEDZwWCrbVOcIgnDD64SPEswVohXKvzvlNE&usqp=CAc");
+    
+    let title = document.createElement("h2");
+    title.innerText= e.title;
+
+    let price = document.createElement("h1");
+    price.innerText= `$${e.price}`;
+
+    let category = document.createElement("h3");
+    category.innerText= e.category;
+
+    let brand= document.createElement("p");
+    brand.innerText= e.brand;
+
+
+    div.append(image, title, price, category, brand);
+    container.append(div);
+
+    });
+    
+}
+</script>
