@@ -1,6 +1,4 @@
-MOCK-RM-22.md
-
-********Mock 1-************
+*********Mock 1-************
 
 Round 1 ==> 
 
@@ -323,3 +321,140 @@ To Perform well in this round, you will have to use one (or more) of the above d
 You may have to use some extra space or use a specific algorithm to optimise your solutions, given the value of the constraints for the input
 Also, you will have to prioritise questions, in order to maximise the number of questions you can solve during the contest. The more questions you solve,
 the higher are your chances of clearing the round
+
+******************  MOCK 9  **********
+
+Round 1 ==>  
+
+Mock Assessment-9
+
+Concepts of JS and React and redux  will be asked here.
+In this round you should explain all the answers on zoom with video turned on and also share your screen if needed.
+Opening of any external website during this round will come under plagiarism
+
+Link: https://saber-columnist-50d.notion.site/Mock-9-cd5881a8944247aea65d88a8fc0ec128
+
+deployed link ==> zoom presention recording link
+time ==> 2hr
+
+Round 2 ==>
+Concepts of JS and React and redux will be asked here.
+In this round you will have quiz of MCQ type.
+Opening VS code /replt / MDN documentation / cheatsheet / notes and any external website during this round is not allowed and will come under plagiarism.
+You need to record your evaluation on zoom with screen share on, you can submit this zoom recording by EOD.
+
+link ==> https://forms.gle/4GAVYVDYUATHGyYQ7
+time ==> 60 min
+
+Round 3 ==>
+
+link==>   https://oj.masaischool.com/contest/7145
+Password ==> 29991
+
+will be a long DSA Contest, consisting  of questions from the following topics
+Arrays
+Strings
+Two Pointers, Sliding Window
+Sorting Algorithms
+Stacks
+Queues
+Linked List
+Recursion
+Backtracking
+Graphs
+Trees
+To Perform well in this round, you will have to use one (or more) of the above data structures to solve the questions
+Based on the time complexity of your solution, you might have to optimise your solutions based on the problem-solving techniques mentioned above
+You may need to use sorting algorithms for a question or two. You can decide which sorting algorithm to choose by looking at the constraints given in the problem statement
+
+
+******************  MOCK 10  **********
+
+Mock Assessment-10
+
+Round 1 ==>  
+
+Concepts of React and Backend will be asked here.
+In this round you should explain all the answers on zoom with video turned on and also share your screen if needed.
+Opening of any external website during this round will come under plagiarism
+
+Link: https://saber-columnist-50d.notion.site/Mock-10-d44d01246097461183dc4dd5e3464179
+
+deployed link ==> zoom presention recording link
+time ==> 2hr
+
+Round 2 ==>
+Concepts of React and Backend will be asked here.
+In this round you will have quiz of MCQ type.
+Opening VS code /replt / MDN documentation / cheatsheet / notes and any external website during this round is not allowed and will come under plagiarism.
+You need to record your evaluation on zoom with screen share on, you can submit this zoom recording by EOD.
+
+link ==>  https://forms.gle/5XuakEU6N3WKvZeq8
+time ==> 60 min
+
+Round 3 ==>
+
+link==>  https://oj.masaischool.com/contest/7210
+Password ==> 29910
+
+will be a long DSA Contest, consisting  of questions from the following topics
+Arrays
+Strings
+Two Pointers, Sliding Window
+Sorting Algorithms
+Stacks
+Queues
+Linked List
+Recursion
+Backtracking
+Graphs
+Trees
+To Perform well in this round, you will have to use one (or more) of the above data structures to solve the questions
+Based on the time complexity of your solution, you might have to optimise your solutions based on the problem-solving techniques mentioned above
+You may need to use sorting algorithms for a question or two. You can decide which sorting algorithm to choose by looking at the constraints given in the problem statement
+
+
+
+******************  MOCK 11  **********
+
+Mock Assessment-11
+
+Round 1 ==>  
+
+Students are required to implement the solution using HTML,CSS, React and Redux and backend (Full stack application)
+Understanding of networks calls will be looked into.
+Knowledge of API, Authentication, Folder structure will be looked into
+Understanding of npm packages will be looked into
+Understanding of Chakra UI is also looked at here.
+Any kind of plagiarism will be having strict actions
+
+Link: 
+
+deployed link ==>
+time ==> 
+
+Round 2 ==>
+ 
+link ==> 
+time ==> 
+
+Round 3 ==>
+
+link==> 
+Password ==>
+
+will be a long DSA Contest, consisting  of questions from the following topics
+Arrays
+Strings
+Two Pointers, Sliding Window
+Sorting Algorithms
+Stacks
+Queues
+Linked List
+Recursion
+Backtracking
+Graphs
+Trees
+To Perform well in this round, you will have to use one (or more) of the above data structures to solve the questions
+Based on the time complexity of your solution, you might have to optimise your solutions based on the problem-solving techniques mentioned above
+You may need to use sorting algorithms for a question or two. You can decide which sorting algorithm to choose by looking at the constraints given in the problem statement
