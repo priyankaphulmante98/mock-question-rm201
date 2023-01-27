@@ -36,6 +36,7 @@ async function ProductFetch({page=1,limit=12,sort="",filter="",order=""}){
   let res = await fetch(
     `https://dbioz2ek0e.execute-api.ap-south-1.amazonaws.com/mockapi/get-products?page=${page}&limit=${limit}&filter=${filter}&sort=${sort}&order=${order}`
   );
+  
   let data = await res.json();
   console.log(data);
   totalpages(data.totalPages)
